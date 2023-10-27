@@ -7,49 +7,52 @@
         <title>Proyecto Boostrap</title>
         <script src="https://kit.fontawesome.com/c538ed8188.js" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="stylesheet" href="../css/style.css">
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
         
     </head>
-    <body class="body">
-        <header class="header container-fluid max-width colorFondo"> 
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid ">
-                    <a class="navbar-brand text-light" href="#">Conf Bs.As.</a>
-                    <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="menuHeader collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav justify-content-end" >
-                            <li class="nav-item">
-                                <a class="nav-link active text-secondary fw-normal" aria-current="page" href="#conferencia">La conferencia</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-secondary fw-normal" href="#oradores">Los oradores</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-secondary fw-normal" href="#lugarFecha">El Lugar y la Fecha</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-secondary fw-normal text-white" href="#formulario">Conviertete en Orador</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-success fw-normal" href="./pages/comprar_tickets.html">Comprar Tickets</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>    
+    <body class="body background">
+        <header class="header container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light mx-0 px-0">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white" href="#">
+                        <img src="../assets/img/codoacodo.png" alt="Logo de codo a codo" class="logo">
+                        Conf Bs.As.
+                    </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav  navbar">
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-bold" href="#conferencia">La conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-lighter" href="#oradores">Los oradores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#lugarFecha">El Lugar y la Fecha</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#formulario">Conviertete en Orador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-success fw-bold" href="./pages/comprar_tickets.html" target="_blank">Comprar Tickets</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
-        <main>
-            <section id="cards" class=" cardCompra justify-content-center container-fluid">
-                <div class="row promos justify-content-center d-flex flex-row  py-4 bd-highlightpy-5 gap-2">
+    <main>
+        <div class="bg-white">
+            <div id="cards" class=" cardCompra container-fluid">
+                <div class="row promotion justify-content-center d-flex flex-row  py-4 bd-highlightpy-5 gap-2">
                     <div class="card uno border-2 rounded text-center col-xxl-3 col-xl-3 col-md-3 col-sm-12 col-xs-12">
                         <div class="card-body">
                             <h5 class="categoria card-title">Estudiante</h5>
                             <p class="fraseUno card-text">Tienen un descuento</p>
                             <h5 class="descuento card-title">80%</h5>
-                            <p class="doc">*presentar documentación</p>
+                            <p class="doc fw-light">*presentar documentación</p>
                         </div>
                     </div>
                     <div class="card dos border-2 rounded text-center col-xxl-4 col-xl-4 col-md-4 col-sm-12 col-xs-12">
@@ -69,69 +72,73 @@
                         </div>
                     </div>
                 </div>
-            </section>
-        <section id="formulario" >
-            <h2 class="tituloFormcom text-center"><span class="fw-normal fs-5">VENTA </span><br class="fs-3">VALOR DE TICKET $200</h2>
-            <form id="formCompra" class="formCompra justify-content-center needs-validation" novalidate >
-                <div class="textDatos d-flex flex-wrap justify-content-center py-4 gap-2">
-                    <input id="inputnombre" class="input border border-1 rounded col-md-6 col-xxl-6 col-sm-12 py-2 ps-2 fs-6 " type="text" placeholder="Nombre" required>
-                    <input id="inputapellido" class="input border border-1 rounded col-md-6 col-xxl-6 col-sm-12 py-2 ps-2 fs-6" type="text" placeholder="Apellido" required>
-                </div>
-                <div  class="mail d-flex flex-wrap justify-content-center" >
-                    <input type="email" class="form-control bordes border-1 rounded col-md-8 col-xxl-8 col-sm-12 py-2 fs-6  text-secondary" id="inputemail" placeholder="Correo" value="Correo">
-                </div>
-                <div class="row justify-content-center">
-                    <div class="cantidad col-md-6 col-xxl-6 col-sm-12 py-2 fs-6  ">
-                        <label for="inputCantidad" class="form-label">Cantidad</label>
-                        <input type="number" class="form-control" id="inputCantidad">
-                      </div>
-                      <div id="categoria" class="categoria col-md-6 col-xxl-6 col-sm-12 py-2 fs-6 ">
-                        <label for="inputCategoria" class="form-label">Categoría</label>
-                        <select id="inputCategoria" class="form-select text-secondary" placeholder="cantidad">
-                            <option id="opGeneral" selected>General</option>
-                            <option id="opEstudiante" value="1">Estdiante</option>
-                            <option id="opTrainee" value="2">Trainee</option>
-                            <option id="opJunior" value="3">Junior</option>
-                        </select>
+            </div>
+            <div id="formulario">
+                <h2 class=" text-center">
+                    <span class="fw-normal titleFormone">VENTA</span>
+                    <p class="fs-3 fw-bold">VALOR DE TICKET $200</p>
+                </h2>
+                <form id="formCompra" class="formCompra needs-validation" novalidate >
+                    <div class="row textDatos justify-content-center py-4 px-3 gap-2">
+                        <input id="inputnombre" class="input border border-1 rounded col-md-4 col-xxl-4 col-xl-4 col-sm-12 py-2 ps-2 fs-6 " type="text" placeholder="Nombre" required>
+                        <input id="inputapellido" class="input border border-1 rounded col-md-4 col-xxl-4 col-xl-4 col-sm-12 py-2 ps-2 fs-6" type="text" placeholder="Apellido" required>
                     </div>
-                </div>
-                <div class="row totalPadre py-4 d-flex flex-wrap justify-content-center ">
-                    <aside class="py-2 fs-6  input-group justify-content-center">
-                        <div class="resTotal d-flex flex-wrap text-start border-1 rounded col-md-8 col-xxl-8 col-sm-12 py-2 fs-6">
-                            <div id="carrito" class=" text-primary text-start fs-5">
-                                <span id="total" class="total">Total a pagar:&dollar;</span>
-                            </div>
-                            <div class="col-md-9 col-xxl-9 col-sm-9 py-2 fs-6">    
-                                <input id="resultadoTotal" type="text" class=" col-md-6 col-xxl-6 col-sm-12 inputTotal form-control text-dark" aria-label="Dollar amount (with dot and two decimal places)">
-                            </div>
+                    <div  class="mail d-flex flex-wrap justify-content-center px-1" >
+                        <input type="email" class="form-control bordes border-1 rounded col-md-6 col-xxl-6 col-xl-6 col-sm-12 py-2 fs-6  text-secondary" id="inputemail" placeholder="Correo" value="Correo">
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="cantidad col-md-4 col-xxl-4 col-xl-4 col-sm-12 py-2 fs-6 px-3">
+                            <label for="inputCantidad" class="form-label">Cantidad</label>
+                            <input type="number" class="form-control" id="inputCantidad">
                         </div>
-                        <div class="botones d-flex justify-content-center py-4 gap-2 justify-content-md-center">
-                            <input id="btnBorrar" class="btnformCompra rounded btn-success text-white btn-lg col-md-6 col-xxl-4 col-sm-6 py-2 fs-6" type="reset" value="Borrar">
-                            <input id="btnResmen" class="btnformCompra rounded btn-success text-white btn-lg col-md-6 col-xxl-4 col-sm-6 py-2 fs-6" type="submit" value="Resumen">
+                        <div id="categoria" class="categoria col-md-4 col-xxl-4 col-xl-4 col-sm-12 py-2 fs-6 px-3">
+                            <label for="inputCategoria" class="form-label">Categoría</label>
+                            <select id="inputCategoria" class="form-select text-secondary" placeholder="cantidad">
+                                <option id="opGeneral" selected>General</option>
+                                <option id="opEstudiante" value="1">Estdiante</option>
+                                <option id="opTrainee" value="2">Trainee</option>
+                                <option id="opJunior" value="3">Junior</option>
+                            </select>
                         </div>
-                    </aside>
-                </div>
-            </form>
-        </section>   
+                    </div>
+                    <div class="col totalPadre py-4 justify-content-center px-2 ">
+                        <aside class="py-2 fs-6  input-group justify-content-center">
+                            <div class="resTotal d-flex flex-wrap text-start border-1 rounded col-md-8 col-xxl-8 col-sm-12 py-2 fs-6">
+                                <div id="carrito" class=" text-primary text-start fs-5">
+                                    <span id="total" class="total">Total a pagar:&dollar;</span>
+                                </div>
+                                <div class="col-md-9 col-xxl-9 col-sm-9 py-2 fs-6">    
+                                    <input id="resultadoTotal" type="text" class=" col-md-6 col-xxl-6 col-sm-12 inputTotal form-control text-dark" aria-label="Dollar amount (with dot and two decimal places)">
+                                </div>
+                            </div>
+                        </aside>
+                        <div class="row btnComp d-flex py-4 gap-2">
+                            <input id="btnBorrar" class="btnformCompra rounded btn-success text-white btn-lg  col-md-5 col-xxl-5 col-xl-5 col-sm-12 py-2 fs-6" type="reset" value="Borrar">
+                            <input id="btnResmen" class="btnformCompra rounded btn-success text-white btn-lg  col-md-5 col-xxl-5 col-xl-5 col-sm-12 py-2 fs-6" type="submit" value="Resumen">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>   
     </main>
-<footer class="footer bg-primary bg-gradient text-white max-width">
-    <nav class="navbar navbar-expand-lg"></nav>  
-    <div class="container  container-fluid">
-        <div class="menuFooter  navbar-brand d-flex flex-nowrap justify-content-evenly align-items-center ps-5">
-            <a class="pt-3 flex-fill text-decoration-none text-white" href="">Preguntas <p>frecuentes</p></a>
-            <a class="flex-fill text-decoration-none text-white "href="">Contáctanos</a>
-            <a class="flex-fill text-decoration-none text-white"href="">Prensa</a>
-            <a class="flex-fill text-decoration-none text-white"href="">Conferencias</a>
-            <a class="pt-3 flex-fill text-decoration-none text-white"href="">Terminos y <p>condiciones</p></a>
-            <a class="flex-fill text-decoration-none text-white"href="">Privacidad</a>
-            <a class="flex-fill text-decoration-none text-white"href="">Estudiantes</a>
-            <a href="https://api.whatsapp.com/send/?phone=<541150500147>" target="_blank"><i class="fa-brands fa-whatsapp icon"></i></a>
+    <footer class="footer bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light"></nav>  
+        <div class="container-fluid ">
+        <div class="menuFooter  navbar-brand d-flex flex-nowrap align-items-center">
+            <a class=" flex-fill bd-highlight text-decoration-none" href="">Preguntas <p>frecuentes</p></a>
+            <a class="flex-fill bd-highlight text-decoration-none"href="">Contáctanos</a>
+            <a class="flex-fill bd-highlight text-decoration-none"href="">Prensa</a>
+            <a class="flex-fill bd-highlight text-decoration-none"href="">Conferencias</a>
+            <a class="pt-3 flex-fill bd-highlight text-decoration-none"href="">Terminos y <p>condiciones</p></a>
+            <a class="flex-fill bd-highlight text-decoration-none"href="">Privacidad</a>
+            <a class="flex-fill bd-highlight text-decoration-none"href="">Estudiantes</a>
+            <a href="https://www.instagram.com/programacodoacodo/" target="_blank"><i class="fa-brands fa-instagram icon"></i></a>
         </div>
-    </div>
-    <div class="alum bg-dark bg-gradient ">
-    <h6 class="p-3 flex-fill bd-highlight text-center fs-6">Coso a Codo - PHP F. 2023 - Segundo Trabajo Integrador - Alumno@:Rocío Alvarez Aucar - junio 2023</h6>
-    </div>
-</footer>
+        </div>
+        <div class="alum bg-dark bg-gradient ">
+            <h6 class="p-3 flex-fill bd-highlight text-center text-white">Coso a Codo - Trabajo Integrador - Alumno@:Rocío Alvarez Aucar</h6>
+        </div>
+    </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="../js/main.js"></script>
 </body>
