@@ -2,19 +2,14 @@
     margin:0;
     padding:0;
 }
-
-
-
 body{
     font-family: 'Roboto', sans-serif;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400; 
 }
-
 .body {
     width: auto;
 }
-/*small screen*/
 
 .logo {
     width: 100px;
@@ -46,19 +41,16 @@ body{
 }
 .carouselText {
     font-size: 7pt;
-    margin-bottom: 20rem;
+    margin-bottom: 15rem;
 }
 .carouselText h5{
     font-size: 10pt;
 }
-
 .conferenciaBtn {
     display: inline;
     align-items: center;
     font-size: 7pt;
-
 } 
-
 .btn{
     font-size: 9pt;
 }
@@ -148,13 +140,73 @@ body{
     flex-direction: column;
 }
 .icon{
-    color:rgb(29, 237, 53);
-    font-size: 3rem;
+    color:rgb(237, 220, 29);
+    font-size: 30pt;
     position:fixed;
     bottom:10px;
     right: 10px;
 }
-  
+/*Comprar Tickets*/
+.cardCompra {
+    width: 75%;
+}
+.cardCompra .uno {
+    width: 15rem;
+    border-color: blue;
+    line-height: 33px;
+}
+.cardCompra .dos {
+    width: 15rem;
+    border-color: blue;
+    line-height: 33px;
+}
+.cardCompra .tres {
+    width: 15rem;
+    line-height: 33px;
+}
+.cardCompra .categoria{
+    font-size: 20px; 
+    font-weight: bold;  
+}
+.cardCompra .fraseUno {
+    font-size: 14px;
+}
+.cardCompra .descuento {
+    font-size: 20px;
+    font-weight: bold;
+}
+.cardCompra .doc{
+    font-size: 12px;
+}
+.titleFormone{
+    font-size: 9pt;
+}
+
+.resTotal{
+    background-color:rgb(201, 238, 244);
+    border-radius: 5;
+}
+.total{
+    background-color: rgb(201, 238, 244);
+    width:20%;
+}
+
+.inputTotal{
+    border-color: rgb(201, 238, 244);
+    background-color:rgb(201, 238, 244);
+    width: 30%;
+
+}
+.btnComp{
+    padding: 0 1rem 0 1rem;
+}
+.btnformCompra {
+    background-color: rgb(159, 217, 83);
+    box-shadow: none;
+    border: none;
+    font-weight: bold;
+}
+
 /*pantalla media*/
 @media  (min-width:767px) and (max-width: 991.98px) {
     .textoConferencia{
@@ -204,7 +256,21 @@ body{
     .coment{
         padding-left: 7.5rem;
     }
-    
+    .textDatos{
+        margin: 0 1rem 0 1rem;
+    }
+    .mail{
+        margin: 0 10rem 0 10rem;  
+    }
+    .cantidad{
+        margin: 1rem 0 0 2rem;
+    }
+    .categoria{
+        margin: 1rem 2rem 0 0; 
+    }
+    .btnComp{
+        margin: 0 1rem 0 8rem ;
+    }    
 }
 /*pantalla large*/
 @media  screen and  (min-width:992px) and (max-width: 1400px) {
@@ -274,84 +340,22 @@ body{
         text-align: center;
         color:#fafafa;
     }
+
+    .textDatos{
+        margin: 0 1rem 0 1rem;
+    }
+    .mail{
+        margin: 0 14rem 0 14rem;  
+    }
+    .cantidad{
+        margin: 1rem 0 0 2rem;
+    }
+    .categoria{
+        margin: 1rem 2rem 0 0; 
+    }
+    .btnComp{
+        margin: 0 3rem 0 12rem ;
+    }
+  }
+
     
-}
-    
-    /*Comprar Tickets
-    .cardCompra {
-        width: 75%;
-    }
-    .cardCompra .uno {
-        width: 15rem;
-        border-color: blue;
-        line-height: 33px;
-        
-    }
-    
-    .cardCompra .dos {
-        width: 15rem;
-        border-color: blue;
-        line-height: 33px;
-    }
-    .cardCompra .tres {
-        width: 15rem;
-        line-height: 33px;
-    }
-    .cardCompra .categoria{
-        font-size: 20px;   
-    }
-    .cardCompra .fraseUno {
-        font-size: 14px;
-    }
-    .cardCompra .descuento {
-        font-size: 20px;
-    }
-    .cardCompra .doc{
-        font-size: 13px;
-    }
-    
-    .formCompra .textDatos {
-        padding: 1vh 39vh 1vh 39vh;
-    }
-    .formCompra .mail{
-        padding:0 45vh 0 45vh;
-    }
-    .formCompra .cantidad {
-        width: 50%;
-        padding: 1vh 1vh 0 47vh;
-    }
-    
-    .formCompra .categoria {
-        width: 50%;
-        padding: 1vh 47vh 0 1vh;
-    }
-    .totalPadre{
-    margin-left: 10vh;
-    margin-right: 10vh;
-    }
-    .resTotal{
-        background-color:rgb(201, 238, 244);
-        border-radius: 5;
-        padding: 0 15vh 0 0;
-    }
-    .total{
-        padding:2vh 0vh 2vh 2vh;
-        background-color: rgb(201, 238, 244);
-        width:20%;
-    }
-    
-    .inputTotal{
-        border-color: rgb(201, 238, 244);
-        background-color:rgb(201, 238, 244);
-        width: 30%;
-    
-    }
-    .btnformCompra {
-        background-color: rgb(159, 217, 83);
-        padding: 3vh 27vh 3vh 27vh;
-        box-shadow: none;
-        border: none;
-        font-weight: bold;
-    }
-    
-    */
