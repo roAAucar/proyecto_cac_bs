@@ -1,0 +1,361 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400; 
+}
+.body {
+    width: auto;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+.navbar{
+    font-weight: blod;
+    color: #d3d3d3;
+}
+.background{
+    background-color: rgb(69, 69, 69);
+}
+
+.navbar{
+    text-align: center;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+} 
+
+.carousel{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+.carousel img{
+    height: 350px;
+}
+.carouselText {
+    font-size: 7pt;
+    margin-bottom: 15rem;
+}
+.carouselText h5{
+    font-size: 10pt;
+}
+.conferenciaBtn {
+    display: inline;
+    align-items: center;
+    font-size: 7pt;
+} 
+.btn{
+    font-size: 9pt;
+}
+
+.btnBy{
+    background-color: rgb(113, 184, 42);
+    border: 0;
+    font-size: 9pt;
+    padding: 6px 12px 6px 12px;
+}
+.oradoresSection .contain{
+    align-items: center;
+}
+.oradoresTitle{
+    text-align: center;
+    align-items: center;
+}
+.card{
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.card img {
+    object-fit:cover;
+}    
+
+.coment{
+    padding: 0;
+}
+.titleOrador{
+    font-size: 18pt;
+}
+.honolulu{
+    text-align: center;
+    align-items: center;    
+}
+.honolulu img {
+    object-fit: cover;
+    width: 100%;
+    border-right: 1px solid #ccccd3;
+}
+.right h2{
+    font-size: 12pt;
+}
+.right p{
+    font-size: 10pt;
+}
+.knowMore{
+    font-size: 9pt;
+}
+.titleForm{
+    font-size: 8pt;
+}
+.textForm{
+    font-size: 10pt;
+}
+
+.form {
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+.form input {
+    width: 100%;
+}
+
+.coment{
+    font-size: 9pt;
+}
+.btnForm{
+    width: 100%;
+    background-color: rgb(113, 184, 42);
+    border: 0;
+    font-size: 9pt;
+}
+
+.footer { 
+    height: 100%;
+    background-color: rgb(2, 2, 91);
+    background:linear-gradient(90deg, rgba(29,64,74,1) 0%, rgba(27,72,86,1) 100%);
+}
+.footer a {
+    color: #fafafa;
+    font-size: 9pt;
+}
+.footer .menuFooter{
+    padding: 0;
+    flex-direction: column;
+}
+.icon{
+    color:rgb(237, 220, 29);
+    font-size: 30pt;
+    position:fixed;
+    bottom:10px;
+    right: 10px;
+}
+/*Comprar Tickets*/
+.cardCompra {
+    width: 75%;
+}
+.cardCompra .uno {
+    width: 15rem;
+    border-color: blue;
+    line-height: 33px;
+}
+.cardCompra .dos {
+    width: 15rem;
+    border-color: blue;
+    line-height: 33px;
+}
+.cardCompra .tres {
+    width: 15rem;
+    line-height: 33px;
+}
+.cardCompra .categoria{
+    font-size: 20px; 
+    font-weight: bold;  
+}
+.cardCompra .fraseUno {
+    font-size: 14px;
+}
+.cardCompra .descuento {
+    font-size: 20px;
+    font-weight: bold;
+}
+.cardCompra .doc{
+    font-size: 12px;
+}
+.titleFormone{
+    font-size: 9pt;
+}
+
+.resTotal{
+    background-color:rgb(201, 238, 244);
+    border-radius: 5;
+}
+.total{
+    background-color: rgb(201, 238, 244);
+    width:20%;
+}
+
+.inputTotal{
+    border-color: rgb(201, 238, 244);
+    background-color:rgb(201, 238, 244);
+    width: 30%;
+
+}
+.btnComp{
+    padding: 0 1rem 0 1rem;
+}
+.btnformCompra {
+    background-color: rgb(159, 217, 83);
+    box-shadow: none;
+    border: none;
+    font-weight: bold;
+}
+
+/*pantalla media*/
+@media  (min-width:767px) and (max-width: 991.98px) {
+    .textoConferencia{
+        text-align: right;
+        font-size: 10pt;
+        margin-left: 7rem;
+    }
+    .textoConferencia h5{
+        font-size: 12pt;
+        font-weight: bold;
+    }
+    .carouselText {
+        margin-bottom: 21rem;
+        font-size: 8pt;
+    }
+    .conferenciaBtn {
+        padding-bottom: 20rem;
+    }
+    .honolulu{
+        text-align:left;
+        border-left: 2px;
+        border-color: #fafafa;
+    }
+    .honolulu img {
+        width: 100%;
+        height: fit-content;
+    }
+    .right{
+        font-size: 10pt;
+    }
+    .right h5{
+        font-size: 12pt;
+    }
+    .form{
+        flex-direction: row;
+        margin-left: 7.5rem;
+    }
+    .form input {
+        flex-wrap: wrap;
+        width: 35%;
+    }
+    .btnForm{
+        width: 75%;
+        margin-left: 7.5rem
+    }
+
+    .coment{
+        padding-left: 7.5rem;
+    }
+    .textDatos{
+        margin: 0 1rem 0 1rem;
+    }
+    .mail{
+        margin: 0 10rem 0 10rem;  
+    }
+    .cantidad{
+        margin: 1rem 0 0 2rem;
+    }
+    .categoria{
+        margin: 1rem 2rem 0 0; 
+    }
+    .btnComp{
+        margin: 0 1rem 0 8rem ;
+    }    
+}
+/*pantalla large*/
+@media  screen and  (min-width:992px) and (max-width: 1400px) {
+
+    .navbar{
+        margin-left: 9rem;
+    } 
+    .carousel{
+        height: 500px;
+    }
+
+    .carousel img{
+        height:500px;
+    }
+    .carouselText {
+        font-size: 10pt;
+        margin-bottom: 10rem;
+        text-align:end;
+        padding-left: 29rem;
+    }
+    .carouselText h5{
+        font-size: 18pt;
+    }
+    .oradoresSection{
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+    .right{
+        margin-bottom: 12rem;
+        text-align: start;
+        font-size: 9pt;
+    }
+    .right h5{
+        font-size: 12pt;
+    }
+    .form{
+        flex-direction: row;
+        margin-left: 19.5rem;
+    }
+    .form input {
+        flex-wrap: wrap;
+        width: 25%;
+    }
+    .btnForm{
+        width: 52%;
+    }
+    .textComent{
+        margin-bottom: 0;
+    }
+    .coment{
+        margin-left: 19.5rem;
+        margin-bottom: 0;
+    }
+    .footer { 
+        height: 100%;
+    }
+    .footer .menuFooter{
+        flex-direction: row;
+        padding-left: 5rem;
+    }
+    .footer a {
+        font-size: 11pt;
+    }   
+    .alum h6{
+        flex-direction: column;
+        font-size: 9px;
+        text-align: center;
+        color:#fafafa;
+    }
+
+    .textDatos{
+        margin: 0 1rem 0 1rem;
+    }
+    .mail{
+        margin: 0 14rem 0 14rem;  
+    }
+    .cantidad{
+        margin: 1rem 0 0 2rem;
+    }
+    .categoria{
+        margin: 1rem 2rem 0 0; 
+    }
+    .btnComp{
+        margin: 0 3rem 0 12rem ;
+    }
+  }
+
+    
