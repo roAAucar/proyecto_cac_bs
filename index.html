@@ -121,20 +121,20 @@
             <div id="formulario" class="bg-white">
                 <h2 class="text-center"><span class="fw-normal titleForm ">CONVIÉRTETE EN UN </span><br class="titleOrador tw-blod">ORADOR</h2>
                 <h3 class="textForm text-center fw-normal">Anótate como orador para dar una charla ignite. Cuéntanos de que quieres hablar! </h3>
-                <form class="pb-2">
+                <form class="pb-2" action="./php/procesar_formulario.php" method="post">
                     <div class="form d-flex bg-white gap-3">
-                        <input id="oradorName"class="border border-1 p-1 rounded" type="text" placeholder="Nombre" required>
-                        <input id="oradorLastname"class="border border-1 p-1 rounded" type="text" placeholder="Apellido" required>
+                        <input id="oradorName" class="border border-1 p-1 rounded" type="text" placeholder="Nombre" name="oradorName" required>
+                        <input id="oradorLastname" class="border border-1 p-1 rounded" type="text" placeholder="Apellido" name="oradorLastname" required>
                     </div>
                     <div class="textComent d-flex justify-content-center">
-                        <textarea class="textarea border border-1 my-3 rounded" name="" id="comentOrador" cols="78" rows="4" placeholder="Sobre que quieres hablar?" required></textarea>
+                        <textarea class="textarea border border-1 my-3 rounded" name="comentOrador" id="comentOrador" cols="78" rows="4" placeholder="Sobre qué quieres hablar?" required></textarea>
                     </div>
-                    <p class="coment text-start fw-light">Recuerda incluir un titulo para tu charla.</p>
+                    <p class="coment text-start fw-light">Recuerda incluir un título para tu charla.</p>
                     <div class="d-flex justify-content-center">
-                        <input id="enviar"class="btnForm  rounded text-white text-decoration-none border b-0 py-2 mx-2" type="submit" value="Enviar">
-                    </div>         
+                        <input id="enviar" class="btnForm rounded text-white text-decoration-none border b-0 py-2 mx-2" type="submit" value="Enviar">
+                    </div>
                 </form>
-            </div>
+            </div>            
         </main>
         <footer class="footer bg-white">
             <nav class="navbar navbar-expand-lg navbar-light"></nav>  
